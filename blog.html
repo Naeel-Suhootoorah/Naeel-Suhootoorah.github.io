@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Bootstrap JavaScript and dependencies (jQuery and Popper.js) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-image: linear-gradient(to bottom, white, rgb(194, 237, 255)); /* Light grey background */
+    }
+
+    .container {
+      padding-top: 50px;
+    }
+
+    .h1 {
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-weight: 500;
+    }
+
+    .card {
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-img-top {
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover .card-img-top {
+      transform: scale(1.1);
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    .card:hover .card-title {
+      color: rgb(0, 127, 174); /* Change color on hover */
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .link {
+      position: relative;
+      display: inline-block;
+    }
+
+    .link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -3px; /* Adjust the thickness of the underline */
+      width: 100%;
+      height: 2px; /* Adjust the height of the underline */
+      transform: scaleX(0); /* Initial state: invisible */
+      transition: transform 0.3s ease; /* Add transition effect */
+    }
+
+    /* Hover effect */
+    .link:hover::after {
+      transform: scaleX(1); /* Scale the underline to full width on hover */
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="col-12 pl-5 pt-5 text-black">
+    <h1 class="h1">The Solutions to the Solution</h1>
+    <h2 class="h2" style="font-weight: 500;">Blog</h2>
+    <p><a href="http://127.0.0.1:5500/Clean%20Water%20Sanitation/project.html">🏡 Home</a></p>
+    <p>When you are not getting the solutions that you want, it means that you have a problem to get to the main solutions. When you solve the problem,
+      you a get a solution. Which ends up to the solutions to the main solutions.
+    </p>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card mb-4">
+        <a href="http://127.0.0.1:5500/Clean%20Water%20Sanitation/blog/waterborne_diseases.html" class="link">
+          <img class="card-img-top"
+               src="https://www.kent.co.in/blog/wp-content/uploads/2021/11/How-to-Prevent-Deadly-Water-Borne-Diseases-1024x512.jpg"
+               alt="Image 1">
+        </a>
+        <a href="http://127.0.0.1:5500/Clean%20Water%20Sanitation/blog/waterborne_diseases.html" class="link">
+          <div class="card-title px-3 py-2">How to prevent waterborne diseases?</div>
+        </a>
+      </div>
+    </div>
+    
+    <div class="col-md-6">
+      <div class="card mb-4">
+        <a href="http://127.0.0.1:5500/Clean%20Water%20Sanitation/blog/waterborne_diseases.html" class="link">
+          <img class="card-img-top"
+               src="https://h2oglobalnews.com/wp-content/uploads/2023/11/water-treatment-technology.jpg"
+               alt="Image 3">
+        </a>
+        <a href="http://127.0.0.1:5500/Clean%20Water%20Sanitation/blog/clean_water_technologies.html" class="link">
+          <div class="card-title px-3 py-2">The Technologies for Water Treatment.</div>
+        </a>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+</body>
+</html>
